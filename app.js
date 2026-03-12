@@ -4,10 +4,13 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.send("Server đang chạy 🚀");
+  res.render("index");
 });
 
 app.listen(PORT, () => {

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/nlatuan1310/Ktra12-3_NhomDKT_CC-MTPTPM#readme",
   "dependencies": {
+    "ejs": "^5.0.1",
     "express": "^5.2.1"
   }
 }
